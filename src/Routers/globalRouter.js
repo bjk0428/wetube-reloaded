@@ -1,11 +1,11 @@
 import express from "express";
 import { join, login } from "../Controllers/userController"
-import { trending, search } from "../Controllers/videoContoller"
+import { home, search } from "../Controllers/videoContoller"
 
 
 const globalRouter = express.Router();
 
-globalRouter.get("/", trending);
+globalRouter.get("/", home);
 globalRouter.get("/join", join);
 globalRouter.get("/login", login);
 
