@@ -4,7 +4,7 @@ include mixins/video
 
 block content
     ul
-        each info in videos
-            +video(info)
+        each video in videos
+            +video(video)
         else
             li Sorry noting found.
